@@ -1,0 +1,21 @@
+{
+  "name": "Accessibility",
+  "description": "Extensão que visa a democratização do acesso a web",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action":{
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"] ,
+      "js": ["content.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab","storage"
+  ],
+
+  "icons": { "16": "icon.png"}
+}
